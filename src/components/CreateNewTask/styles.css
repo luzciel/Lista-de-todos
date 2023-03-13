@@ -1,10 +1,16 @@
+.container-create-task{
+    overflow: hidden;
+    height: 12vh;
+}
 .create-task {
  height: 7vh;
  display: flex;
- justify-content: center;
+ justify-content: space-between;
+ margin: 0 1.5em;
 }
+
 .create-task-description{
-    width: 50vw;
+    padding-right: 3em;
 }
 .create-task-button {
     background: #458EF7 ;
@@ -12,9 +18,19 @@
     margin-left: 0.3rem;
     border-radius: 8px;
     border-style: none;
-    font-weight: 700;
+    font-weight: 600;
+    white-space: normal;
 }
 
 .create-task-button:hover{
     background: #3672CB;
 }
+/* .create-task-button:before {  
+    content: "ADD TODO ";
+} */
+
+/* @media(max-width:700px){
+    .create-task-button:before {  
+    content: "ADD";
+}
+} */

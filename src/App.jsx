@@ -9,9 +9,11 @@ import store from "./store";
 const App = () => {
   return (
     <Provider store={store}>
-      <TodoList />
-      <TodoResults />
-      <CreateNewTask />
+      <div className="cart">
+        <TodoList />
+        <TodoResults />
+        <CreateNewTask />
+      </div>
     </Provider>
   );
 };

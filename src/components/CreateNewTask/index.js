@@ -48,7 +48,7 @@ const CreateNewTask = () => {
   const handleCloseError = () => setErrorMessage(false);
 
   return (
-    <div>
+    <div className="container-create-task">
       <form onSubmit={handleSubmit} className="create-task">
         <input
           type="text"
@@ -63,7 +63,7 @@ const CreateNewTask = () => {
           disabled={isDisabled}
           className="create-task-button"
         >
-          ADD TO TODO
+          ADD TODO
         </button>
       </form>
       {errorMessage ? <ErrorMessage closeError={handleCloseError} /> : null}

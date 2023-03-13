@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 400px;
+  width: 60wv;
   margin: 0 auto 5px;
   cursor: pointer;
 }
@@ -24,7 +24,9 @@
 }
 
 .todo-list-item-delete {
-  background: rgb(200, 200, 200);
+  background: #fae1e3;
+  border-radius: 3px;
+  color: #7e7273;
   border: none;
   cursor: pointer;
   width: 24px;
@@ -33,7 +35,7 @@
 }
 
 .todo-list-item-delete:hover {
-  background: rgb(172, 172, 172);
+  background: #ff8892;
 }
 
 .todo-list-item-checked {
