@@ -1,0 +1,20 @@
+.create-task {
+ height: 7vh;
+ display: flex;
+ justify-content: center;
+}
+.create-task-description{
+    width: 50vw;
+}
+.create-task-button {
+    background: #458EF7 ;
+    color: white;
+    margin-left: 0.3rem;
+    border-radius: 8px;
+    border-style: none;
+    font-weight: 700;
+}
+
+.create-task-button:hover{
+    background: #3672CB;
+}
