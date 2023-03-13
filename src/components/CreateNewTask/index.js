@@ -4,10 +4,13 @@ import { useCreateTaskMutation } from "api/apiSlice";
 import { useDispatch } from "react-redux";
 import { setTodoList } from "../../store/slices/todoList";
 import ErrorMessage from "components/ErrorMessage.js";
+import { v4 as uuidv4 } from 'uuid';
 
 const CreateNewTask = () => {
   const [inputValue, setInputValue] = useState("");
   const [errorMessage, setErrorMessage] = useState(false);
+  const idGenerator = uuidv4();
+
 
   const dispatch = useDispatch();
   const [createTask] = useCreateTaskMutation();
@@ -22,7 +25,7 @@ const CreateNewTask = () => {
     e.preventDefault();
 
     const label = inputValue;
-    const id = 6;
+    const id = idGenerator;
     const checked = false;
     const newTodo = {
       id,
